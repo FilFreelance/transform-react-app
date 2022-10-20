@@ -1,4 +1,3 @@
-import logo from "./undergroundLogo.png"
 import "./App.css"
 import React, { Component } from "react"
 import TrainList from "./component/TrainList"
@@ -8,7 +7,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src="./undergroundLogo.png" className="App-logo" alt="logo" />
                     <div className="station-text">
                         <p>Great Portland Street Tube Station</p>
                         <p>Please see incoming trains below </p>

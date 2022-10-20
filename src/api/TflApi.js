@@ -1,6 +1,8 @@
+// Mock for down time train hours 
 // import TflApiMock from "./TflApiMock.json"
 
-// Mock for down time train hours 
+
+//  Request all trains from Great Portland Street Station by its unique Stoppoint ID
 export function getGreatPortlandStreetArrivals() {
     return new Promise((resolve, reject) => {
         fetch("https://api.tfl.gov.uk/Stoppoint/940GZZLUGPS/Arrivals")
@@ -16,6 +18,7 @@ export function getGreatPortlandStreetArrivals() {
     })
 }
 
+// Format returned trainList for simpler fields and sorting of list
 export function formatTrainList(trainList) {
     let formattedList = []
 
@@ -24,10 +27,9 @@ export function formatTrainList(trainList) {
     })
     return formattedList.sort((a, b) => a.timeToStation - b.timeToStation);
 
-    // Group implementation
-    // return _.groupBy(formattedList, "platformName")
 }
 
+// Soft MODEL processing train object
 function formatTrainObject(train) {
     return {
         id: train.id,
