@@ -6,9 +6,9 @@ The project was built to fill in a TFL API test with the base requirement to dis
 
 As well as extra tasks such as :
 
-• Display the trains by the platform they're arriving at
-• Display the trains in order of which one is due next
-• Have the output auto-update so it's always showing the latest information
+- Display the trains by the platform they're arriving at
+- Display the trains in order of which one is due next
+- Have the output auto-update so it's always showing the latest information
 
 
 ## Small libraries added
