@@ -1,23 +1,23 @@
-import logo from "./logo.svg"
+import logo from "./undergroundLogo.png"
 import "./App.css"
-import * as TflApi from "./api/TflApi"
-import React, { useEffect } from "react"
+import React, { Component } from "react"
+import TrainList from "./component/TrainList"
 
-function App() {
-    useEffect(() => {
-        TflApi.getGreatPortlandStreetArrivals().then((station) => {
-            TflApi.formatTrainList(station)
-        })
-    }, [])
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <div className="station-text">
+                        <p>Great Portland Street Tube Station</p>
+                        <p>Please see incoming trains below </p>
+                    </div>
 
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Basic TFL test app</p>
-            </header>
-        </div>
-    )
+                    <TrainList />
+                </header>
+            </div>
+        )
+    }
 }
-
 export default App
