@@ -34,8 +34,8 @@ class TrainList extends Component {
         if (trainsRunning) {
             return (
                 <Container>
-                    {this.state.platforms.map((train) => (
-                        <Card key={train.id}>
+                    {this.state.platforms.map((train, i) => (
+                        <Card key={train.id + i}>
                             <Container>
                                 <Row xs={3} md={3} lg={3}>
                                     <Col>{train.timeToStation} minutes</Col>
