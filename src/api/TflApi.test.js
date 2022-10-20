@@ -24,7 +24,7 @@ describe("Test TFLApi functions", () => {
         expect(Array.isArray(fetchResponse)).toBe(true)
     })
     // Format Array of trains into distinct platforms and soft modelled train objects
-    it("formatTrainList formatting of object", async () => {
+    it("formatTrainList formatting of array of trains", async () => {
         const formattedList = TflApi.formatTrainList(TflApiMock.station)
 
         const trainModel = [
