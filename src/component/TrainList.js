@@ -23,7 +23,7 @@ class TrainList extends Component {
         try {
             setInterval(async () => {
                 this.getPlatforms()
-            }, 30000)
+            }, 10000)
         } catch (error) {
             console.log(error)
         }
