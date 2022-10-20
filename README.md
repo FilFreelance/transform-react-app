@@ -17,6 +17,9 @@ As well as extra tasks such as :
 "jest": "^27.5.1",
 "lodash": "^4.17.21",
 
+## Testing
+
+Current test cover a base fetch test and a formatting test.
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -27,6 +30,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Testing
 
-Current test cover a base fetch test and a formatting test.
